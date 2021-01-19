@@ -1,0 +1,13 @@
+.app-grid {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  height: 100vh;
+}
+
+.app-grid__header {
+  background-color: #172a3a;
+}
+
+.app-grid__main {
+  background-color: #508991;
+}
