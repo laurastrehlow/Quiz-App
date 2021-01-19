@@ -1,4 +1,11 @@
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-color: #172a3a;
+  padding-top: 20px;
+}
+
+.nav__link {
+  align-items: center;
 }
