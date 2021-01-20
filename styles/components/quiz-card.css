@@ -3,13 +3,14 @@
   transition: 0.3s;
   border-radius: 5px;
   margin: 10px;
+  padding: 10px;
   text-align: center;
-  background-color: #004346;
+  background: linear-gradient(#004346, #09bc8a);
+  position: relative;
 }
 
 .link_bookmark {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  right: -150px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
