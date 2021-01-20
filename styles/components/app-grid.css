@@ -11,4 +11,5 @@
 
 .app-grid__main {
   background-color: #508991;
+  overflow-y: scroll;
 }
