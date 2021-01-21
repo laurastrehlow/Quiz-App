@@ -18,3 +18,7 @@
 .navigation__link_bookmark {
   filter: drop-shadow(5px 5px 4px hotpink);
 }
+
+.navigation__link_create {
+  filter: drop-shadow(5px 5px 4px hotpink);
+}
