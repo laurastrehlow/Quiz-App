@@ -9,16 +9,10 @@
 .navigation__link {
   align-items: center;
   filter: drop-shadow(5px 5px 4px #004346);
+  background: transparent;
+  border: none;
 }
 
-.navigation__link_home {
-  filter: drop-shadow(5px 5px 4px hotpink);
-}
-
-.navigation__link_bookmark {
-  filter: drop-shadow(5px 5px 4px hotpink);
-}
-
-.navigation__link_create {
+.active {
   filter: drop-shadow(5px 5px 4px hotpink);
 }

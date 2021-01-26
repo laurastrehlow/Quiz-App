@@ -14,10 +14,10 @@
   </head>
   <body class="app-grid">
     <header class="app-grid__header">
-      <h1>Quiz.ly</h1>
+      <h1 id="headline">Quiz.ly</h1>
     </header>
 
-    <main class="app-grid__main">
+    <section data-js="page1" class="hidden app-grid__main">
       <section class="card">
         <button class="card__bookmark" href="#bookmark">
           <img
@@ -80,45 +80,126 @@
           <button>Tag 4</button>
         </details>
       </section>
-    </main>
+    </section>
+
+    <section data-js="page2" class="hidden app-grid__main">
+      <section class="card">
+        <button class="card__bookmark" href="#bookmark">
+          <img
+            src="styles/images/bookmark-solid.svg"
+            width="30"
+            height="30"
+            alt="bookmarks"
+            class=""
+          />
+        </button>
+        <h2>Question</h2>
+        <details>
+          <summary>Show answer</summary>
+          Insert answer here<br />
+          <button>Tag 1</button>
+          <button>Tag 2</button>
+          <button>Tag 3</button>
+          <button>Tag 4</button>
+        </details>
+      </section>
+
+      <section class="card">
+        <button class="card__bookmark" href="#bookmark">
+          <img
+            src="styles/images/bookmark-solid.svg"
+            width="30"
+            height="30"
+            alt="bookmarks"
+            class=""
+          />
+        </button>
+        <h2>Question</h2>
+        <details>
+          <summary>Show answer</summary>
+          Insert answer here<br />
+          <button>Tag 1</button>
+          <button>Tag 2</button>
+          <button>Tag 3</button>
+          <button>Tag 4</button>
+        </details>
+      </section>
+
+      <section class="card">
+        <button class="card__bookmark" href="#bookmark">
+          <img
+            src="styles/images/bookmark-solid.svg"
+            width="30"
+            height="30"
+            alt="bookmarks"
+            class=""
+          />
+        </button>
+        <h2>Question</h2>
+        <details>
+          <summary>Show answer</summary>
+          Insert answer here<br />
+          <button>Tag 1</button>
+          <button>Tag 2</button>
+          <button>Tag 3</button>
+          <button>Tag 4</button>
+        </details>
+      </section>
+    </section>
+
+    <section data-js="page3" class="hidden app-grid__main">
+      <form class="create">
+        <label for="question">Question:</label><br />
+        <input type="text" id="question" /><br />
+        <label for="answer">Answer:</label><br />
+        <input type="text" id="answer" /><br />
+        <label for="tags">Tags:</label><br />
+        <input type="text" id="tags" /><br />
+      </form>
+      <button class="button">Submit</button>
+    </section>
 
     <nav class="navigation">
-      <a class="navigation__link" href="#home"
-        ><img
+      <button data-js="button1" class="navigation__link active" href="">
+        <img
           class="navigation__link_home"
           src="styles/images/home-solid.svg"
           width="50"
           height="50"
           alt="home"
           class=""
-      /></a>
+        />
+      </button>
 
-      <a class="navigation__link" href="bookmark.html"
-        ><img
+      <button data-js="button2" class="navigation__link active" href="">
+        <img
           src="styles/images/bookmark-solid.svg"
           width="50"
           height="50"
           alt="bookmarks"
           class=""
-      /></a>
+        />
+      </button>
 
-      <a class="navigation__link" href="create.html"
-        ><img
+      <button data-js="button3" class="navigation__link active" href="">
+        <img
           src="styles/images/plus-square-solid.svg"
           width="50"
           height="50"
           alt="create"
           class=""
-      /></a>
+        />
+      </button>
 
-      <a class="navigation__link" href="#settings"
-        ><img
+      <button class="navigation__link" href="">
+        <img
           src="styles/images/cogs-solid.svg"
           width="50"
           height="50"
           alt="settings"
           class=""
-      /></a>
+        />
+      </button>
     </nav>
   </body>
 </html>
