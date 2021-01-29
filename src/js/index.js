@@ -7,6 +7,7 @@ const page3 = document.querySelector('[data-js=page3]')
 const button1 = document.querySelector('[data-js=button1]')
 const button2 = document.querySelector('[data-js=button2]')
 const button3 = document.querySelector('[data-js=button3]')
+const cards = document.querySelectorAll('[data-js="card"]')
 
 button1.addEventListener('click', () => {
   page1.classList.remove('hidden')
@@ -36,4 +37,21 @@ button3.addEventListener('click', () => {
   button2.classList.remove('active')
   button3.classList.add('active')
   headline.innerHTML = 'Create'
+})
+
+cards.forEach(card => {
+  const buttonToggle = card.querySelector('[data-js="button-bookmark"]')
+
+  buttonToggle.addEventListener('click', () => {
+    buttonToggle.classList.toggle('active')
+  })
+})
+
+cards.forEach(card => {
+  const button = card.querySelector('[data-js="button"]')
+  const answer = card.querySelector('[data-js="answer"]')
+
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+  })
 })

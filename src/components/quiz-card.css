@@ -16,3 +16,32 @@
   background: transparent;
   border: none;
 }
+
+textarea {
+  max-width: 250px;
+}
+
+.answer__button {
+  border: none;
+  background: linear-gradient(#508991, #173a3a);
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px darkslategrey;
+}
+
+button {
+  border: none;
+  background: linear-gradient(#508991, #172a3a);
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.submit__button {
+  margin: 0 150px;
+  font-size: 20px;
+  background: #004346;
+  box-shadow: 0 4px 8px darkslategrey;
+}

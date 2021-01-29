@@ -18,8 +18,12 @@
     </header>
 
     <section data-js="page1" class="app-grid__main">
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -29,18 +33,20 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
 
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -50,18 +56,20 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
 
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -71,20 +79,22 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
     </section>
 
     <section data-js="page2" class="hidden app-grid__main">
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -94,18 +104,20 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
 
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -115,18 +127,20 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
 
-      <section class="card">
-        <button class="card__bookmark" href="#bookmark">
+      <section class="card" data-js="card">
+        <button
+          class="card__bookmark"
+          data-js="button-bookmark"
+          href="#bookmark"
+        >
           <img
             src="styles/images/bookmark-solid.svg"
             width="30"
@@ -136,27 +150,25 @@
           />
         </button>
         <h2>Question</h2>
-        <details>
-          <summary>Show answer</summary>
-          Insert answer here<br />
+          <button data-js="button" class="answer__button">Show answer</button>
+          <p data-js="answer" class="hidden">Insert answer here</p><br />
           <button>Tag 1</button>
           <button>Tag 2</button>
           <button>Tag 3</button>
           <button>Tag 4</button>
-        </details>
       </section>
     </section>
 
     <section data-js="page3" class="hidden app-grid__main">
       <form class="create">
         <label for="question">Question:</label><br />
-        <input type="text" id="question" /><br />
+        <textarea type="text" maxlength="200" data-js="textarea" nKeypress="zaehlen()"id="question" rows="4" cols="50"></textarea><br />
         <label for="answer">Answer:</label><br />
-        <input type="text" id="answer" /><br />
+        <textarea type="text" maxlength="200" data-js="textarea" id="answer" rows="4" cols="50"/></textarea></7textarea><br />
         <label for="tags">Tags:</label><br />
-        <input type="text" id="tags" /><br />
+        <textarea type="text" maxlength="200" data-js="textarea" id="tags" rows="4" cols="50"/></textarea><br />
       </form>
-      <button class="button">Submit</button>
+      <button class="submit__button">Submit</button>
     </section>
 
     <nav class="navigation">
