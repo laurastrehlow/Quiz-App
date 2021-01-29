@@ -9,6 +9,30 @@ const button2 = document.querySelector('[data-js=button2]')
 const button3 = document.querySelector('[data-js=button3]')
 const cards = document.querySelectorAll('[data-js="card"]')
 
+const textArea1 = document.querySelector('[data-js=textarea1]')
+const remaining1 = document.getElementById('remaining1')
+
+const textArea2 = document.querySelector('[data-js=textarea2]')
+const remaining2 = document.getElementById('remaining2')
+
+const textArea3 = document.querySelector('[data-js=textarea3]')
+const remaining3 = document.getElementById('remaining3')
+
+const maxLength1 = textArea1.maxLength
+const maxLength2 = textArea2.maxLength
+const maxLength3 = textArea3.maxLength
+
+function calculateRemaining() {
+  const currentLength1 = textArea1.value.length
+  remaining1.innerHTML = maxLength1 - currentLength1
+
+  const currentLength2 = textArea2.value.length
+  remaining2.innerHTML = maxLength2 - currentLength2
+
+  const currentLength3 = textArea3.value.length
+  remaining3.innerHTML = maxLength3 - currentLength3
+}
+
 button1.addEventListener('click', () => {
   page1.classList.remove('hidden')
   page2.classList.add('hidden')
