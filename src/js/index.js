@@ -8,29 +8,23 @@ const button1 = document.querySelector('[data-js=button1]')
 const button2 = document.querySelector('[data-js=button2]')
 const button3 = document.querySelector('[data-js=button3]')
 const cards = document.querySelectorAll('[data-js="card"]')
+const forms = document.querySelectorAll('[data-js="formElement"]')
 
-const textArea1 = document.querySelector('[data-js=textarea1]')
-const remaining1 = document.getElementById('remaining1')
+forms.forEach(formElement => {
+  const textarea = formElement.querySelector('[data-js="textarea"]')
+  const remainingParagraph = formElement.querySelector('[data-js="remaining"]')
 
-const textArea2 = document.querySelector('[data-js=textarea2]')
-const remaining2 = document.getElementById('remaining2')
+  textarea.addEventListener('keyup', () => {
+    const maxLength = textarea.maxLength
+    const currentLength = textarea.value.length
+    const remaining = maxLength - currentLength
 
-const textArea3 = document.querySelector('[data-js=textarea3]')
-const remaining3 = document.getElementById('remaining3')
+    remainingParagraph.innerHTML = remaining + '/' + maxLength
+  })
+})
 
-const maxLength1 = textArea1.maxLength
-const maxLength2 = textArea2.maxLength
-const maxLength3 = textArea3.maxLength
-
-function calculateRemaining() {
-  const currentLength1 = textArea1.value.length
-  remaining1.innerHTML = maxLength1 - currentLength1
-
-  const currentLength2 = textArea2.value.length
-  remaining2.innerHTML = maxLength2 - currentLength2
-
-  const currentLength3 = textArea3.value.length
-  remaining3.innerHTML = maxLength3 - currentLength3
+function clearFields() {
+  formElement.querySelector('[data-js="textarea"]').value = ''
 }
 
 button1.addEventListener('click', () => {

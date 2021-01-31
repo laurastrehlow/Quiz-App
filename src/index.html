@@ -167,39 +167,43 @@
 
     <section data-js="page3" class="hidden app-grid__main">
       <form class="create">
-        <label for="question">Question:</label><br />
-        <textarea
-          type="text"
-          data-js="textarea1"
-          maxlength="200"
-          id="question"
-          onchange="calculateRemaining()"
-          rows="4"
-          cols="50"
-        ></textarea>
-        <p id="remaining1"></p>
-        <label for="answer">Answer:</label><br />
-        <textarea
-          type="text"
-          data-js="textarea2"
-          maxlength="200"
-          onchange="calculateRemaining()"
-          id="answer"
-          rows="4"
-          cols="50"
-        ></textarea>
-        <p id="remaining2"></p>
-        <label for="tags">Tags:</label><br />
-        <textarea
-          type="text"
-          data-js="textarea3"
-          maxlength="200"
-          onchange="calculateRemaining()"
-          id="tags"
-          rows="4"
-          cols="50"
-        ></textarea>
-        <p id="remaining3"></p>
+        <fieldset data-js="formElement">
+          <label for="question">Question:</label>
+          <br />
+          <textarea
+            type="text"
+            data-js="textarea"
+            maxlength="200"
+            id="question"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <p data-js="remaining"></p>
+        </fieldset>
+        <fieldset data-js="formElement">
+          <label for="answer">Answer:</label><br />
+          <textarea
+            type="text"
+            data-js="textarea"
+            maxlength="200"
+            id="answer"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <p data-js="remaining"></p>
+        </fieldset>
+        <fieldset data-js="formElement">
+          <label for="tags">Tags:</label><br />
+          <textarea
+            type="text"
+            data-js="textarea"
+            maxlength="200"
+            id="tags"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <p data-js="remaining"></p>
+        </fieldset>
         <button class="submit__button">Submit</button>
       </form>
     </section>

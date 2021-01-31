@@ -44,3 +44,8 @@ button {
   background: #004346;
   box-shadow: 0 4px 8px darkslategrey;
 }
+
+fieldset {
+  border: none;
+  margin: 15px -20px;
+}
