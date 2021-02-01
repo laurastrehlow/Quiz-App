@@ -23,10 +23,6 @@ forms.forEach(formElement => {
   })
 })
 
-function clearFields() {
-  formElement.querySelector('[data-js="textarea"]').value = ''
-}
-
 button1.addEventListener('click', () => {
   page1.classList.remove('hidden')
   page2.classList.add('hidden')
